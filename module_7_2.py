@@ -1,10 +1,3 @@
-info = [
-    'Text for tell.',
-    'Используйте кодировку utf-8.',
-    'Because there are 2 languages!',
-    'Спасибо!'
-    ]
-
 def custom_write(file_name, strings):
     n = 0
     slem = {}
@@ -16,7 +9,12 @@ def custom_write(file_name, strings):
         file.close()
         slem.update({(n, tell):i})
     return slem
-
+info = [
+    'Text for tell.',
+    'Используйте кодировку utf-8.',
+    'Because there are 2 languages!',
+    'Спасибо!'
+    ]
 result = custom_write('test.txt', info)
 for slem in result.items():
     print(slem)
